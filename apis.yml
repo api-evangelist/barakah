@@ -1,7 +1,24 @@
 aid: barakah
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/barakah.png
 name: Barakah
-description: Barakah is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Barakah is a Saudi foodtech company operating a consumer mobile marketplace that fights food
+  waste by connecting restaurants, cafes, hotels, bakeries, and grocery retailers with consumers who buy
+  their surplus, still-fresh meals and food products at discounts of up to 70 percent for pickup or delivery.
+  Founded in Jeddah and backed by 500 Global, FoodLabs, and Salica Investments, Barakah has grown into one
+  of the most downloaded food and drink apps in Saudi Arabia with partnerships across more than 800 merchants,
+  including global brands. Barakah is a business-to-consumer mobile application and does not currently publish
+  a public developer platform, API, or SDK; this profile captures its identity and public web surface.
 url: https://raw.githubusercontent.com/api-evangelist/barakah/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Food Tech
+- Food Waste
+- Sustainability
+- Marketplace
+- Mobile App
+- Saudi Arabia
+- Food Delivery
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,32 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/barakah-domain-security.yml
 - type: Website
   url: https://barakah.app
+- type: About
+  url: https://barakah.app/about
+- type: Support
+  url: https://barakah.app/help-support
+- type: Careers
+  url: https://barakah.app/career
+- type: Partners
+  url: https://barakah.app/become-a-partner
+- type: SignUp
+  url: https://barakah.onelink.me/w04R/Website
+- type: TermsOfService
+  url: https://barakah.app/terms
+- type: PrivacyPolicy
+  url: https://barakah.app/privacy-policy
+- type: LinkedIn
+  url: https://sa.linkedin.com/company/barakahapp
+- type: Twitter
+  url: https://twitter.com/barakahapp
+- type: Instagram
+  url: https://www.instagram.com/barakahapp/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
